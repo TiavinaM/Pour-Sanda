@@ -168,3 +168,20 @@ button:hover {
     0% { transform: translateY(0) rotate(0deg); opacity: 0.8; }
     100% { transform: translateY(-110vh) rotate(180deg); opacity: 0; }
 }
+/* --- Correction pour l'affichage sur téléphone --- */
+.step {
+    max-height: 80vh;   /* Limite la hauteur de la carte à 80% de l'écran */
+    overflow-y: auto;   /* Ajoute un défilement si le texte est trop long */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#typewriter-text {
+    font-size: 0.95rem; /* Taille de texte adaptée aux mobiles */
+    line-height: 1.4;   /* Espace entre les lignes */
+}
+
+button {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
